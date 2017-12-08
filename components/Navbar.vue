@@ -31,10 +31,10 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a class="navigation__link"><nuxt-link to="/">Home</nuxt-link></a></li>
-                            <li class="navigation__item"><a class="navigation__link"><nuxt-link to="/about">About</nuxt-link></a></li>
-                      <li class="navigation__item"><a class="navigation__link"><nuxt-link to="/projects">Projects</nuxt-link></a></li>
-                           <li class="navigation__item"><a class="navigation__link"><nuxt-link to="/contact">Contact</nuxt-link></a></li>
+                    <nuxt-link class="navigation__item" to="/">Home</nuxt-link>
+                    <nuxt-link class="navigation__item" to="/about">About</nuxt-link>
+                    <nuxt-link class="navigation__item" to="/projects">Projects</nuxt-link>
+                    <nuxt-link class="navigation__item" to="/contact">Contact</nuxt-link>
                  
                     </ul>
             </nav>
