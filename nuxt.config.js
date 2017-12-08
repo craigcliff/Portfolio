@@ -1,7 +1,26 @@
+const { resolve } = require('path')
+
 module.exports = {
+
+  modules: [
+    // provide path to the file with resources
+    
+    ['nuxt-sass-resources-loader', [
+      resolve(__dirname, 'assets/css/abstracts/_variables.scss'),
+      resolve(__dirname, 'assets/css/abstracts/_mixins.scss')
+  ]]
+ 
+
+  ],
+
+
+
   /*
    ** Headers of the page
    */
+
+
+
   head: {
     title: 'portfolio',
     meta: [{
@@ -34,6 +53,16 @@ module.exports = {
       }
     ]
   },
+
+  css: [
+    
+    // CSS file in the project
+    '@/assets/css/main.css',
+    // SCSS file in the project
+    '@/assets/css/main.scss'
+  ],
+
+
   /*
    ** Customize the progress bar color
    */
