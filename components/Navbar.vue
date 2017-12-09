@@ -21,27 +21,60 @@
   </div> -->
 
      <div class="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <input type="checkbox" class="navigation__checkbox" id="nav-check" v-model="checked">
 
-            <label for="navi-toggle" class="navigation__button">
+            <label for="nav-check" class="navigation__button"   >
                 <span class="navigation__icon">&nbsp;</span>
             </label>
 
-            <div class="navigation__background">&nbsp;</div>
+        
+           
+            <div class="navigation__background"  >&nbsp;</div>
+   
+  
+ 
+   
 
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <nuxt-link class="navigation__item" to="/">Home</nuxt-link>
+            <nav  class="navigation__nav"  >
+                <ul  class="navigation__list" @click="toggleShow"  >
+                
+                   <nuxt-link class="navigation__item"   to="/">Home</nuxt-link>
                     <nuxt-link class="navigation__item" to="/about">About</nuxt-link>
                     <nuxt-link class="navigation__item" to="/projects">Projects</nuxt-link>
                     <nuxt-link class="navigation__item" to="/contact">Contact</nuxt-link>
-                 
+    
                     </ul>
             </nav>
         </div>
 </template>
 
+<script>
+
+export default{
+  data () {
+    return {
+      checked: false
+    }
+  },
+
+  methods:{
+
+    toggleShow() {
+      this.checked = !this.checked;
+    }
+    
+  }
+
+
+  }
+
+</script>
+
 <style lang="scss">
+
+
+
+
 .navigation {
     &__checkbox {
         display: none;

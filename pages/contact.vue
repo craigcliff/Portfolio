@@ -8,3 +8,23 @@
     </div>
   </section>
 </template>
+
+<style lang='scss'>
+
+.page-enter{
+  .navigation{
+
+  &__background {
+        transform: scale(0);
+    }
+
+&__nav {
+        opacity: 0;
+        width: 0;
+    }
+
+
+  }
+} 
+
+</style>
