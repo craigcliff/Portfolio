@@ -7,7 +7,10 @@ module.exports = {
     
     ['nuxt-sass-resources-loader', [
       resolve(__dirname, 'assets/css/abstracts/_variables.scss'),
-      resolve(__dirname, 'assets/css/abstracts/_mixins.scss')
+      resolve(__dirname, 'assets/css/abstracts/_mixins.scss'),
+      resolve(__dirname, 'assets/css/base/_typography.scss'),
+      resolve(__dirname, 'assets/css/base/_utilities.scss'),
+      resolve(__dirname, 'assets/css/base/_base.scss')
   ]]
  
 
@@ -46,6 +49,11 @@ module.exports = {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700'
       },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Corben'
+      },
+
       {
         rel: 'icon',
         type: 'image/x-icon',

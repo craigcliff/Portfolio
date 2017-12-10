@@ -119,7 +119,7 @@ export default{
         border-radius: 50%;
         position: fixed;
         
-        background-image: radial-gradient($color-primary-light, $color-primary-dark);
+        background-image: radial-gradient($color-secondary-light, $color-secondary-dark);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
         top: 85%;
@@ -171,7 +171,7 @@ export default{
         &:visited {
             display: inline-block;
             font-family: 'Sofia';
-            font-size: 3rem;
+            font-size: 6rem;
             font-weight: 900;
             padding: 1rem 2rem;
             color: $color-white;
