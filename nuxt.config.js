@@ -10,7 +10,9 @@ module.exports = {
       resolve(__dirname, 'assets/css/abstracts/_mixins.scss'),
       resolve(__dirname, 'assets/css/base/_typography.scss'),
       resolve(__dirname, 'assets/css/base/_utilities.scss'),
-      resolve(__dirname, 'assets/css/base/_base.scss')
+      resolve(__dirname, 'assets/css/base/_base.scss'),
+      resolve(__dirname, 'assets/css/components/_feature-box.scss'),
+      resolve(__dirname, 'assets/css/layout/_layout.scss')
   ]]
  
 

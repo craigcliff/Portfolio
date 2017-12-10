@@ -25,10 +25,14 @@
 
 .header {
     height: 100Vh;
+
+    
+       
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8));
+        rgba($color-primary-dark, 0.8)),
+    url(../assets/images/bg.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
