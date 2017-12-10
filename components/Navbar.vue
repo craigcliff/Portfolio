@@ -143,7 +143,7 @@ export default{
     &__nav {
         height: 100vh;
         position: fixed;
-        top: 0;
+        top: -10%;
         left: 0;
         z-index: 1500;
 
