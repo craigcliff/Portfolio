@@ -1,8 +1,19 @@
 <template>
-  <section class="section is-large">
-    <div class="container has-text-centered">
-      <h1 class="title">Hi, I'm Craig Hector</h1>
-      <h2 class="subtitle">A web Developer based in Cape Town, South Africa.</h2>
-    </div>
-  </section>
+  <div class="bg-home">
+  </div>
 </template>
+
+
+<style  lang="scss">
+
+.bg-home{
+  
+    width: auto;
+    height: 100Vh;
+    background-color: $color-secondary-light;
+  
+
+
+}
+
+</style>

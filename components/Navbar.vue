@@ -31,17 +31,20 @@
            
             <div class="navigation__background"  >&nbsp;</div>
    
-  
+   
+                   
  
    
 
             <nav  class="navigation__nav"  >
                 <ul  class="navigation__list" @click="toggleShow"  >
-                
-                   <nuxt-link class="navigation__item"   to="/">Home</nuxt-link>
-                    <nuxt-link class="navigation__item" to="/about">About</nuxt-link>
-                    <nuxt-link class="navigation__item" to="/projects">Projects</nuxt-link>
-                    <nuxt-link class="navigation__item" to="/contact">Contact</nuxt-link>
+
+                 
+                  <li class="navigation__item"><nuxt-link class="navigation__link"  to="/">Home</nuxt-link></li>
+                  <li class="navigation__item"><nuxt-link class="navigation__link"  to="/about">About</nuxt-link></li>
+                  <li class="navigation__item"><nuxt-link class="navigation__link" to="/projects">Projects</nuxt-link></li>
+                  <li class="navigation__item"><nuxt-link class="navigation__link"  to="/contact">Contact</nuxt-link></li>
+                   
     
                     </ul>
             </nav>
@@ -82,8 +85,8 @@ export default{
 
     &__button {
         background-color: $color-white;
-        height: 7rem;
-        width: 7rem;
+        height: 5rem;
+        width: 5rem;
         position: fixed;
         
         border-radius: 50%;
@@ -111,8 +114,8 @@ export default{
     }
 
     &__background {
-        height: 6rem;
-        width: 6rem;
+        height: 4rem;
+        width: 4rem;
         border-radius: 50%;
         position: fixed;
         
@@ -167,27 +170,22 @@ export default{
         &:link,
         &:visited {
             display: inline-block;
+            font-family: 'Sofia';
             font-size: 3rem;
-            font-weight: 300;
+            font-weight: 900;
             padding: 1rem 2rem;
             color: $color-white;
             text-decoration: none;
             text-transform: uppercase;
-            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
-            background-size: 220%;
-            transition: all .4s;
-
-            span {
-                margin-right: 1.5rem;
-                display: inline-block;
-            }
+            
+            
         }
         
         &:hover,
         &:active {
-            background-position: 100%;
+        
             color: $color-primary;
-            transform: translateX(1rem);
+            
         }
     }
 
@@ -206,12 +204,12 @@ export default{
     //ICON
     &__icon {
         position: relative;
-        margin-top: 3.5rem;
+        margin-top: 2.5rem;
 
         &,
         &::before,
         &::after {
-            width: 3rem;
+            width: 2.5rem;
             height: 2px;
             background-color: $color-grey-dark-3;
             display: inline-block;
@@ -250,7 +248,7 @@ export default{
     &__checkbox:checked + &__button &__icon::after {
         top: 0;
         transform: rotate(-135deg);
-        background-color: red;
+        
        
 
     }

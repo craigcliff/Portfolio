@@ -32,7 +32,7 @@ module.exports = {
       },
       {
         hid: 'description',
-        name: 'description',
+        name: 'Craig Hector Web Developer Portfolio',
         content: 'Nuxt.js project'
       }
     ],
